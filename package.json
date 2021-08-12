@@ -5,13 +5,7 @@
     "ng": "ng",
     "start": "node server",
     "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "engines": {
-    "node": "14.17.1",
-    "npm": "6.14.13"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
