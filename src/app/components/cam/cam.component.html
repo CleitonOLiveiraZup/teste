@@ -1,0 +1,8 @@
+<div class="container">
+  <zxing-scanner class="teste"  (scanSuccess)="scanSuccessHandler($event)" [formats]="allowedFormats"></zxing-scanner>
+  <div  *ngFor="let result of results">
+    <p  result="ngModel"> {{result}}</p><br>
+    <p>{{resulta}}</p>
+
+  </div>
+</div>

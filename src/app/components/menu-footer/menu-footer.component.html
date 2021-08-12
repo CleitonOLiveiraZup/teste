@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+  <div class="teste" *ngIf="mostrarMenu"></div>
+  <a routerLinkActive="active" (click)="fazerLog()" routerLink="home" class="nav__link">
+
+    <i class="material-icons nav__icon__home" [style.color]="mostrarMenu ? '#fb5c00' : ''">home <span [style.color]="mostrarMenu ? '#fb5c00' : ''" class="nav__text">Início</span>
+    </i>
+  </a>
+  <a routerLinkActive="active" (click)="fazerLo()"routerLink="h" class="nav__link">
+    <div class="fab" >
+      <i class="material-icons nav__icon cor">qr_code</i>
+      <span  class="nav__valid">Validar cupom</span>
+    </div>
+  </a>
+  <div class="outra" *ngIf="edited"></div>
+  <a routerLinkActive="active" (click)="fazerLogi()"   class="nav__"routerLink="h" class="nav__link">
+    <i class="material-icons nav__icon__historic" [style.color]="edited ? '#fb5c00' : ''">manage_search <span  [style.color]="edited ? '#fb5c00' : ''" class="nav__historic">Histórico</span>
+    </i>
+  </a>
+</nav>

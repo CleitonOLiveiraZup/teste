@@ -1,0 +1,24 @@
+@import "~@zupit/trato-web-ui/assets/styles/colors.scss";
+
+.message-form {
+  &__content {
+    min-height: 45.4rem;
+    width: 25%;
+  }
+
+  @media only screen and (min-width: 280px) and (max-width: 1300px) {
+    &__content {
+      width: 95%;
+    }
+    button {
+      width: 95%;
+    }
+  }
+}
+html {
+  background-color: $white !important;
+}
+img {
+  width: 152px;
+  height: 42px;
+}

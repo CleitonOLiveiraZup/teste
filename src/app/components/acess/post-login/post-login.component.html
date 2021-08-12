@@ -1,0 +1,28 @@
+<div class="trow gy-7 message-form">
+  <trato-card-content>
+    <div align="center" class="tcol-12 g-4">
+      <img src="../../../../assets/img_logo_trato_default.svg" alt="" />
+    </div>
+    <form [formGroup]="loginForm" class="message-form__content tcontainer my-5">
+      <div class="trow">
+        <div class="tcol-12 g-5">
+          <trato-form-field>
+            <trato-input-label>CNPJ do posto parceiro</trato-input-label>
+            <input [ngModelOptions]="{standalone: true}" [(ngModel)]="usuario.nome" name="nome" type="tel" class="w-100"  mask="00.000.000/0000-00" tratoInput placeholder="Ex: 00.000.000/0000-00" maxlength="300" />
+          </trato-form-field>
+        </div>
+        <div class="tcol-12 g-5">
+          <trato-form-field>
+            <trato-input-label>Senha</trato-input-label>
+            <input [ngModelOptions]="{standalone: true}" [(ngModel)]="usuario.senha" name="senha" type="password" class="w-100" tratoInput placeholder="Ex: Parceiro premiado" maxlength="255">
+          </trato-form-field>
+        </div>
+      </div>
+      <div class="trow-6 tcontainer my-5">
+        <div align="center" class="tcol-12 g-5 ">
+          <button (click)="fazerLogin()" class="w-100" type="button" trato-button color="primary" size="lg">Entrar</button>
+        </div>
+      </div>
+    </form>
+  </trato-card-content>
+</div>

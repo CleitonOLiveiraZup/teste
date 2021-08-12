@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #3f3f3f;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.test {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 80px;
+  top: 73px;
+
+  /* B- light_grey */
+
+  background: #9b9b9b;
+  /* B- white */
+
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.testt {
+  height: 192px;
+}

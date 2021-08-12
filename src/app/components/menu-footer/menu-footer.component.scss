@@ -1,0 +1,136 @@
+@import "~@zupit/trato-web-ui/assets/styles/tokens/font.scss";
+
+.nav {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  display: flex;
+  height: 63px;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background: #ffffff;
+  box-shadow: 0px -4px 6px rgba(155, 155, 155, 0.3);
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+  }
+  .nav__icon {
+    height: 20.655000686645508px;
+    width: 20.400146484375px;
+    padding: 6px;
+    font-size: 30px;
+  }
+  &__icon__historic {
+    position: absolute;
+    right: 10.61%;
+    top: 8.33%;
+    bottom: 8.33%;
+    color: #9b9b9b;
+  }
+  &__icon__home {
+    position: absolute;
+    left: 10.61%;
+    top: 8.33%;
+    bottom: 8.33%;
+    color: #9b9b9b;
+  }
+
+  &__text {
+    position: absolute;
+    height: 14px;
+    left: 1.61%;
+    right: 79.44%;
+    top: calc(40% - 14px / 2 + 17px);
+    font-family: $font-family-fallback;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: justify;
+    color: #9b9b9b;
+  }
+  &__valid {
+    position: absolute;
+    height: 14px;
+    left: -10px;
+    top: calc(90% - 14px / 2 + 17px);
+    font-family: $font-family-fallback;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #9b9b9b;
+  }
+  &__historic {
+    position: absolute;
+    height: 14px;
+    left: -5px;
+    right: 11.39%;
+    top: calc(40% - 14px / 2 + 17px);
+    font-family: $font-family-fallback;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #9b9b9b;
+  }
+}
+
+.fab {
+  position: absolute;
+  left: 45.89%;
+  right: 45.89%;
+  top: -16.33%;
+  bottom: 47.22%;
+  height: 44px;
+  width: 44px;
+  background: linear-gradient(
+    57.65deg,
+    #e90000 -9.1%,
+    #fb5c00 48.55%,
+    #ff8800 106.19%
+  );
+  border-radius: 4px;
+}
+
+.cor {
+  color: white;
+}
+
+.teste {
+  position: absolute;
+  left: 5.89%;
+  /* right: 74.44%; */
+  top: 0;
+  bottom: 94.94%;
+  background: #fb5c00;
+  border-radius: 0px 0px 4px 4px;
+  width: 60px;
+  height: 4px;
+}
+
+.outra {
+  position: absolute;
+  /* left: 74.44%; */
+  right: 5.89%;
+  top: 0;
+  bottom: 94.94%;
+  background: #fb5c00;
+  width: 60px;
+  height: 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.my-disable:hover {
+  display: inline;
+  background-color: red;
+}
